@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+	
+		div#box{
+		position:relative;
+		width:300px;
+		height:675px;
+		background:#EDCDC2;
+		border:2px solid black;
+		margin:auto;
+		padding-top:10px;
+		
+		}
+		div#thread{
+		position:absolute;
+		left:135px;
+		/*top:10px;*/
+		width:30px;
+		height:450px;
+		background:linear-gradient(to right,#e283ac,#CE3175,#e283ac);
+		border:2px solid black;
+		margin:auto;
+		animation:swing 1s ease-in-out infinite alternate ;
+		transform-origin:50% 0%;
+		box-shadow:10px 10px 0px 0px grey;
+		
+		visibility:hijdden;
+		
+		}
+		@keyframes swing{
+		0% {transform:rotate(-10deg);box-shadow:0px 3px 0px 0px grey;}
+		100% {transform:rotate(10deg);box-shadow:10px 3px 0px 0px grey;}
+		}
+		
+		
+		
+		div#bob{
+		position:absolute;
+		left:75px;
+		top:460px;
+		width:150px;
+		height:150px;
+		background:radial-gradient(#737373,#b2b2b2);
+		border:2px solid black;
+		border-radius:50%;
+		box-shadow:10px 10px 0px 0px grey;
+		margin:auto;
+		animation:swing 1s ease-in-out infinite alternate ;
+		transform-origin: 50% -480px;
+		}
+		#temp{
+		border:2px solid red;
+		position:absolute;
+		bottom:75px;
+		left:50%;
+		height:480px;
+		width:1px;
+		
+		display:none;
+		}
+		
+		
+		
+
+	</style>
+</head>
+
+<body>
+<!--      COMMENT -->
+
+<div id="box">   
+<div id="thread"> </div>
+
+<div id="bob"><div id="temp"></div></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!--      COMMENT 
+
+
+document.getElementById(" ").innerHTML  
+
+
+
+
+
+
+
+-->
+
+

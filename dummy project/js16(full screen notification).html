@@ -1,0 +1,108 @@
+<html>
+<head>
+	<style>
+		div#box{
+		
+		position:relative;
+		width:500px;
+		min-height:150px;
+		margin:auto;
+		margin-top:300px;
+		border:5px solid #b9b0b0;
+		background:url("background.jpg");
+		background-size:cover;
+		box-shadow:0 0 1000px 40px grey; 
+		
+		}
+		
+		div#text {
+		color:red;
+		text-size:2em;
+		width:400px;
+		max-height:70px;
+		margin:auto;
+		padding:20px;
+		
+        
+		}
+		
+		div#close {
+		
+		text-size:3em;
+		width:40px;
+		position:absolute;
+		right:5px;
+		padding:5px;
+		margin:15px;
+		background-color:#e4d1d1;
+        
+		}
+		div#close:hover{
+		background-color: #915555;
+		transition:background-color 0.2s;
+		}
+		
+		
+		
+		
+
+	</style>
+</head>
+
+<body ">
+
+<div id="box" >
+   
+
+	
+	<div id="text">
+	Press Button To Close:-
+	</div>
+    <div id="close" onclick="alerts()">
+	X
+	</div>
+
+
+</div>
+
+
+<script>
+function alerts()
+{
+
+document.getElementById("box").style.display="none";
+
+
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+ 
+
+
+
+
+

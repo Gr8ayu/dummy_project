@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDiv4 {
+    background-color:#EDCDC2;
+    font-size:3em;
+    
+    padding: 30px;
+    min-width:200px;
+    max-width:500px;
+    border:15px solid #CE3175;
+    margin:auto;
+}
+#reset {
+    background-color:#DD4132;
+    font-size:3em;
+    
+    padding: 30px;
+    min-width:200px;
+    max-width:500px;
+    border:15px solid #955251;
+    margin:auto;
+}
+ 
+</style>
+</head>
+<body>
+
+
+<div id="myDiv4">
+ 
+</div>
+<div id="reset" onclick="reset()" style="display:none;">Sorry :(</div>
+<script>
+function addText(x)
+{document.getElementById("myDiv4").innerHTML=x;}
+
+
+document.getElementById("myDiv4").innerHTML="Click Me..!!!";
+document.getElementById("myDiv4").addEventListener("click",f1);
+
+function f1(){
+
+addText("Click Again :)");
+document.getElementById("myDiv4").style.border=" 15px solid #CFB095";
+document.getElementById("myDiv4").removeEventListener("click",f1);
+document.getElementById("myDiv4").addEventListener("click",f2);
+
+}
+
+function f2(){
+addText("Thank U... : *");
+document.getElementById("myDiv4").style.border=" 15px solid #CE3175";
+document.getElementById("myDiv4").removeEventListener("click",f2);
+document.getElementById("myDiv4").addEventListener("click",f3);
+
+}
+function f3(){
+addText("Stop It.. :-{<");
+document.getElementById("myDiv4").style.border=" 15px solid #CFB095";
+document.getElementById("myDiv4").removeEventListener("click",f3);
+document.getElementById("myDiv4").addEventListener("click",f4);
+
+}
+function f4(){
+addText("HEllo again");
+document.getElementById("myDiv4").removeEventListener("click",f4);
+document.getElementById("myDiv4").style.visibility="hidden";
+document.getElementById("reset").style.display="block";
+}
+function reset()
+{document.getElementById("myDiv4").innerHTML="Click Me..!!!";
+document.getElementById("myDiv4").addEventListener("click",f1);
+document.getElementById("myDiv4").style.visibility="visible";
+document.getElementById("reset").style.display="none";
+
+}
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
